@@ -73,7 +73,7 @@ $(window).on('load', function () {
   });
 
   // Funções para os outros modos (set-size, set-distance, etc.)
-  $(".set-size, .set-distance, .set-speed, .set-zoom").click(function () {
+  $(".set-size, .set-distance, .set-speed").click(function () {
     setView("scale-normal");
 
     body.removeClass("set-3d-active");
@@ -96,10 +96,6 @@ $(window).on('load', function () {
 
   $(".set-view").click(function () {
     body.toggleClass("view-3D view-2D");
-  });
-
-  $(".set-zoom").click(function () {
-    body.toggleClass("zoom-large zoom-close");
   });
 
   $(".set-speed").click(function () {
